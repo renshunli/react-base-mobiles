@@ -15,7 +15,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="nav-barr">
-                    <Nav list={list}>
+                    <Nav list={list} customEl={<div>自定义插槽组件</div>}>
                         <div>插槽类似vue - slot</div>
                     </Nav>
                 </div>

@@ -17,6 +17,7 @@ const Nav = props => (
             ))
         }
         {props.children}
+        {props.customEl}
     </div>
 );
 
