@@ -1,0 +1,31 @@
+.nav {
+    padding: 0;
+    overflow: hidden;
+    margin-bottom:10px;
+    box-shadow: 0px -3px 10px #000000;
+    a{
+        width: 50%;
+        float:left;
+        border-right:1px solid #FCF5F5;
+        box-sizing: border-box;
+    }
+    .am-list-item .am-list-line .am-list-content{
+        text-align:center;
+        cursor:pointer;
+    }
+    >a:nth-child(2){
+        border-right:0;
+    }
+    div{
+        background:#ffffff;
+        text-align:center;
+    }
+}
+.nav li {
+    border-left: 5px solid sandybrown;
+    margin: 15px 0;
+    padding: 6px 0;
+    color: #333;
+    list-style: none;
+    background: #bbb;
+}

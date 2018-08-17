@@ -1,0 +1,75 @@
+//定位上下左右居中
+@mixin center {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 根据top居中定位 */
+@mixin centerByTop($top){
+    position: absolute;
+    top: $top;
+    right:0;
+    left:0;
+    margin:0 auto;
+}
+
+/* opacity 隐藏兼容 */
+@mixin opacity($num){
+    filter: alpha(opacity=$num);
+    -moz-opacity: $num;
+    -khtml-opacity: $num;
+    opacity: $num;
+}
+
+// 遮罩层
+@mixin mask {
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/*定义公共颜色样式*/
+/*文字颜色*/
+$black_c:#000000;
+
+/*白色*/
+$white_c:#ffffff;
+
+/*再深一点颜色*/
+$deep_c:#333333;
+
+/*文字灰*/
+$grey_c:#999;
+
+/* 红色 */
+$red_c: #EA3D45;
+
+/* 背景灰 */
+$grey_b: #F4F4F4;
+
+/* 背景白 */
+$white_b:#ffffff;
+
+/*定义固定文字尺寸*/
+$font10:20px;
+
+$font12:24px;
+
+$font14:28px;
+
+$font16:32px;
+
+$font18:36px;
+
