@@ -12,7 +12,7 @@ react移动端基础项目
 
             postcss remtopx 1:2 比例   10px:20px ->设计图 20px
 
-src 开发目录
+```src 开发目录
     |-- assets 静态文件目录
     |-- component 公共- 组件存放目录
     |-- container 公共容器- 组件存放目录
@@ -32,3 +32,4 @@ src 开发目录
         |-- HomePage.js 页面组件
     |-- App.js App组件 顶级APP容器
     |-- index.js 项目根js文件 初始化 绑定dom
+```
