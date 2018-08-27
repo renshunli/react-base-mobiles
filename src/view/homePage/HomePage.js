@@ -18,13 +18,15 @@ class HomePage extends Component {
                         <div key={ele.text}>{ele.text}</div>
                     ))
                 }
+                {this.props.commonState}
             </div>
         );
     }
 }
 
 const mapStateToProps = (state, ownProps) => ({
-    list: state.homePage.list
+    list: state.homePage.list,
+    commonState: state.commonState.name
 })
 
 
