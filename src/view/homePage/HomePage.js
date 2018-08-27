@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from './action'
+import * as actions from './action.js'
 
 class HomePage extends Component {
 

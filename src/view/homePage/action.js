@@ -1,5 +1,5 @@
 import { createAction } from 'redux-actions'
-import { getDataService } from '../../../api.js';
+import { getDataService } from '../../api/api.js';
 
 
 export const setList = createAction('SET_LIST')

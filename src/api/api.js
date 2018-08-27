@@ -1,4 +1,4 @@
-import rhttp from './model/reactRequest'
+import rhttp from './reactRequest'
 
 /* API接口 */
 /**
