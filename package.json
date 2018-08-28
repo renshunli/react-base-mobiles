@@ -2,7 +2,6 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/haha",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
@@ -96,6 +95,12 @@
       "node",
       "mjs"
     ]
+  },
+  "proxy": {
+    "/api": {
+      "target": "https://www.baidu.com",
+      "changeOrigin": true
+    }
   },
   "babel": {
     "presets": [
