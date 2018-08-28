@@ -54,6 +54,7 @@ module.exports = {
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
+    'react-hot-loader/patch',
   ],
   output: {
     // Add /* filename */ comments to generated require()s in the output.
@@ -148,7 +149,7 @@ module.exports = {
             loader: require.resolve('babel-loader'),
             options: {
                 plugins: [
-                    ['import', [{ libraryName: "antd-mobile", style: 'css' }]],
+                    ['import', [{ libraryName: "antd-mobile", style: 'css' }],'react-hot-loader/babel'],
                  ],
               // This is a feature of `babel-loader` for webpack (not Babel itself).
               // It enables caching results in ./node_modules/.cache/babel-loader/

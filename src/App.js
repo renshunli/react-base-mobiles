@@ -16,10 +16,6 @@ class App extends Component {
         this.state = {};
     }
 
-    textInput(input){
-        console.log(input.focus());
-    }
-
     render() {
         return (
             <div className="App">
@@ -28,8 +24,7 @@ class App extends Component {
                         <div>插槽类似vue - slot</div>
                     </Nav>
                 </div>
-                <input
-                type="text" placeholder="ref自动获取焦点" ref={this.textInput} />
+
                 <Route path="/homepage" component={HomePage}></Route>
                 <Route path="/listpage" component={ListPage}></Route>
                 <WingBlank>

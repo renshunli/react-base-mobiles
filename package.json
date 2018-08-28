@@ -57,9 +57,11 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
+    "@types/react-hot-loader": "^4.1.0",
     "antd-mobile": "^2.2.3",
     "babel-plugin-import": "^1.8.0",
     "node-sass": "^4.9.3",
+    "react-hot-loader": "^4.3.5",
     "sass-loader": "^7.1.0"
   },
   "jest": {
@@ -105,6 +107,9 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+        "react-hot-loader/babel"
     ]
   },
   "eslintConfig": {

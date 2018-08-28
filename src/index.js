@@ -3,16 +3,31 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 import { store } from './store/createStore.js'
-import { Provider } from 'react-redux';
-import { HashRouter, Route} from 'react-router-dom';
-import './util/rem.js';
+import { Provider } from 'react-redux'
+import { HashRouter, Route } from 'react-router-dom'
+import './util/rem.js'
 import './assets/css/mixin.scss'
+import { AppContainer } from 'react-hot-loader'
 
-ReactDOM.render(
-    <Provider store={store}>
-        <HashRouter>
-            <Route path="/" component={App}></Route>
-        </HashRouter>
-    </Provider>,
-    document.getElementById('root'))
+
+const render = Component =>{
+    ReactDOM.render(
+        <AppContainer>
+            <Provider store={store}>
+                <HashRouter>
+                    <Route path="/" component={Component} />
+                </HashRouter>
+            </Provider>
+        </AppContainer>,
+        document.getElementById('root')
+    )
+}
+render(App)
 registerServiceWorker()
+
+if (module.hot) {
+    module.hot.accept('./App', () => {
+        // if you are using harmony modules ({modules:false})
+        render(App)
+    })
+}

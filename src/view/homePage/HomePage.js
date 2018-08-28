@@ -8,11 +8,18 @@ class HomePage extends Component {
         let dispatch = this.props.dispatch;
         dispatch(actions.getList())
     }
+    textInput(input){
+        if(input){
+            input.focus()
+        }
+    }
 
     render() {
         return (
             <div className="homePage">
                 <div>首页</div>
+                <input
+                type="text" placeholder="ref自动获取焦点" ref={this.textInput} />
                 {
                     this.props.list.map((ele,index) => (
                         <div key={ele.text}>{ele.text}</div>
