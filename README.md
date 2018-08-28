@@ -32,4 +32,5 @@ react移动端基础项目
         |-- HomePage.js 页面组件
     |-- App.js App组件 顶级APP容器
     |-- index.js 项目根js文件 初始化 绑定dom
+    |-- .env.local 配置文件
 ```
