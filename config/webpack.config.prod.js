@@ -207,7 +207,7 @@ module.exports = {
                             flexbox: 'no-2009',
                           }),
                           pxtorem({
-                            rootValue: 32,
+                            rootValue: 16,
                             propWhiteList: [],
                             //propList: ['*'],
                             // 注意：如果有使用第三方UI如VUX，则需要配置下忽略选择器不转换。
