@@ -4,7 +4,9 @@ import HomePage from './view/homePage/HomePage.js';
 import ListPage from './view/listPage/ListPage.js';
 import Nav from './component/nav/Nav.js';
 import { Button,WingBlank } from 'antd-mobile';
-
+import './assets/css/reset.css';
+import './assets/css/common.css';
+import './util/animation.js';
 
 
 let list = [{text: "首页",url: 'homepage'},{text: "列表页",url: 'listpage'}]

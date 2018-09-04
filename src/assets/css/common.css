@@ -1,0 +1,7 @@
+.rsl-list-light-active{
+    background:rgba(235, 230, 230,0.2);
+}
+.rsl-list-light{
+    position: absolute;
+    left:0;top:0;right:0;bottom:0;
+}

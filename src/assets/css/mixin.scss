@@ -40,6 +40,14 @@
     border-radius: $radius;
 }
 
+@mixin rightRow{
+    background-image: url('../../assets/img/Chevron.png');
+    width:8px;
+    height:13px;
+    background-size: 8px 13px;
+}
+
+
 /*定义公共颜色样式*/
 /*文字颜色*/
 $black_c:#000000;
@@ -72,4 +80,3 @@ $font14:28px;
 $font16:32px;
 
 $font18:36px;
-
