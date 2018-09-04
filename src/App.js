@@ -30,7 +30,7 @@ class App extends Component {
                 <Route path="/homepage" component={HomePage}></Route>
                 <Route path="/listpage" component={ListPage}></Route>
                 <WingBlank>
-                    <Button>antd库按钮</Button>
+                    <Button onClick={()=>{this.props.history.push('/haha')}} >antd库按钮</Button>
                 </WingBlank>
             </div>
         );
