@@ -7,6 +7,7 @@ import { Button,WingBlank } from 'antd-mobile';
 import './assets/css/reset.css';
 import './assets/css/common.css';
 import './util/animation.js';
+import './app.scss';
 
 
 let list = [{text: "首页",url: 'homepage'},{text: "列表页",url: 'listpage'}]
