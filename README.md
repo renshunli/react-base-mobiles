@@ -4,7 +4,7 @@ react移动端基础项目
 
             react redux react-router
 
-            adtd-mobile UI库
+            antd-mobile UI库
 
             sass axios
 
