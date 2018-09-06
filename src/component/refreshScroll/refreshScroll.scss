@@ -1,0 +1,28 @@
+.refreshScroll {
+    .list-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        overflow: hidden;
+        .top-tip {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #555;
+        }
+
+        .bottom-tip {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            color: #777;
+        }
+    }
+}
