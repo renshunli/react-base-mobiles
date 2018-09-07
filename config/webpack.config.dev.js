@@ -200,7 +200,10 @@ module.exports = {
                   ],
                 },
               },
-              {loader: require.resolve('sass-loader')}
+              {loader: require.resolve('sass-loader')},
+              {loader: require.resolve('sass-resources-loader'),options: {
+                resources: require.resolve('../src/assets/css/mixin.scss'),
+               }}
             ],
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.

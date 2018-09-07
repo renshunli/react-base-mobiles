@@ -217,7 +217,10 @@ module.exports = {
                         ],
                       },
                     },
-                    {loader: require.resolve('sass-loader')}
+                    {loader: require.resolve('sass-loader')},
+                    {loader: require.resolve('sass-resources-loader'),options: {
+                        resources: require.resolve('../src/assets/css/mixin.scss'),
+                    }}
                   ],
                 },
                 extractTextPluginOptions
