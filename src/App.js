@@ -23,11 +23,11 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="nav-barr">
-                    <Nav list={list} customEl={<div>自定义插槽组件</div>}>
+                    <Nav  list={list} customEl={<div>自定义插槽组件</div>}>
                         <div>插槽类似vue - slot</div>
                     </Nav>
                 </div>
-
+                <Route path="/" exact history={this.props.history} component={HomePage}></Route>
                 <Route path="/homepage" component={HomePage}></Route>
                 <Route path="/listpage" component={ListPage}></Route>
                 <WingBlank>
