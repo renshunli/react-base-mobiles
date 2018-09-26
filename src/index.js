@@ -4,7 +4,7 @@ import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 import { store } from './store/createStore.js'
 import { Provider } from 'react-redux'
-import { HashRouter, Route } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import './util/rem.js'
 import './assets/css/mixin.scss'
 import { AppContainer } from 'react-hot-loader'
@@ -15,7 +15,7 @@ const render = Component =>{
         <AppContainer>
             <Provider store={store}>
                 <HashRouter>
-                    <Route path="/" component={Component} />
+                    <Component/>
                 </HashRouter>
             </Provider>
         </AppContainer>,
