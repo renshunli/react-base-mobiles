@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import HomePage from './view/homePage/HomePage.js';
 import ListPage from './view/listPage/ListPage.js';
+import TouchMove from './view/touchMove/TouchMove.js';
 import Nav from './component/nav/Nav.js';
 import { Button,WingBlank } from 'antd-mobile';
 import './assets/css/reset.css';
@@ -30,6 +31,7 @@ class App extends Component {
                 <Route path="/" exact history={this.props.history} component={HomePage}></Route>
                 <Route path="/homepage" component={HomePage}></Route>
                 <Route path="/listpage" component={ListPage}></Route>
+                <Route path="/touchmove" component={TouchMove}></Route>
                 <WingBlank>
                     <Button onClick={()=>{this.props.history.push('/haha')}} >antd库按钮</Button>
                 </WingBlank>
