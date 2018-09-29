@@ -11,7 +11,7 @@ import './util/animation.js';
 import './app.scss';
 
 let TouchMove = Loadable({
-    loader: () => import('./view/touchMove/TouchMove.js'),
+    loader: () => import(/* webpackChunkName: "TouchMove" */'./view/touchMove/TouchMove.js'),
     loading: () => (<div>loading</div>)
 })
 
