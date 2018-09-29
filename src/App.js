@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
+import Loadable from 'react-loadabael';
 import HomePage from './view/homePage/HomePage.js';
 import ListPage from './view/listPage/ListPage.js';
-import TouchMove from './view/touchMove/TouchMove.js';
 import Nav from './component/nav/Nav.js';
 import { Button,WingBlank } from 'antd-mobile';
 import './assets/css/reset.css';
 import './assets/css/common.css';
 import './util/animation.js';
 import './app.scss';
+
+let TouchMove = Loadable({
+    loader: () => import('./view/touchMove/TouchMove.js'),
+    loading: () => (<div>loading</div>)
+})
 
 
 let list = [{text: "首页",url: 'homepage'},{text: "列表页",url: 'listpage'}]
