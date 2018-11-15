@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import Loadable from 'react-loadabael';
+import Loadable from 'react-loadable';
 import HomePage from './view/homePage/HomePage.js';
 import ListPage from './view/listPage/ListPage.js';
 import Nav from './component/nav/Nav.js';
