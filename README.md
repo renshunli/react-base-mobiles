@@ -1,8 +1,5 @@
 react移动端基础项目
 
-
-[![license-badge.svg](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](./LICENSE)
-
 项目使用
 
             react redux react-router
